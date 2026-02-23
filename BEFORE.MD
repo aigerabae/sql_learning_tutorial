@@ -1,0 +1,3 @@
+Current understanding before starting the course:
+SQL is like a programming language that accesses data in tables and interconnected objects more effectively than anything else. The databases are supposed to be stored differently than pandas df or csv files so it manages big data better; SQL like Python provides syntax to deal with their databases. It allows you to filter data, select specific rows/columns/conditions and is used in business to deal with clients stats, etc.
+SQL code is called queries and it has upper case letters and words like AND SELECT FROM and some others. There are different types of SQL like mySQL and Postgre, and the latter is used more often in serious production, while MySQL is more common overall (like holding a partner database in 1Fit)
