@@ -142,3 +142,12 @@ select p_name, t_name from people right join things on p_id=t_owner;
 select p_name, t_name from people right join things on p_id=t_owner
 except
 select p_name, t_name from people left join things on p_id=t_owner;
+
+# i used union on them to get things not owned by anyone and people who don't own anything
+(select p_name, t_name from people right join things on p_id=t_owner
+except
+select p_name, t_name from people left join things on p_id=t_owner)
+union
+(select p_name, t_name from people left join things on p_id=t_owner
+except
+select p_name, t_name from people right join things on p_id=t_owner);
